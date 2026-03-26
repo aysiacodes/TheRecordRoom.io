@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Record Room</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <h1>The Record Room</h1>
+    </nav>
+
+    <div class="hero-content">
+      <h2>Rate the music you love</h2>
+      <p>
+        The Record Room is a music review app that lets users connect with Spotify
+        and share ratings for songs, albums, and playlists.
+      </p>
+      <button id="loginBtn">Connect with Spotify</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>How it works</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Connect</h3>
+          <p>Log in with Spotify to access your music profile.</p>
+        </div>
+        <div class="card">
+          <h3>Discover</h3>
+          <p>Browse your favorite music and build your own reviews.</p>
+        </div>
+        <div class="card">
+          <h3>Rate</h3>
+          <p>Score songs, albums, and playlists in one place.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="profileSection" class="profile hidden">
+      <h2>Your Spotify Profile</h2>
+      <div class="profile-card">
+        <div id="avatar"></div>
+        <h3 id="displayName"></h3>
+        <p><strong>User ID:</strong> <span id="id"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <p><strong>Spotify URI:</strong> <a id="uri" href="#" target="_blank"></a></p>
+        <p><strong>Profile Link:</strong> <a id="url" href="#" target="_blank">Open Profile</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
