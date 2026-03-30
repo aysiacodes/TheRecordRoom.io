@@ -4,58 +4,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Record Room</title>
+  <title>The Record Room - Music Rating App</title>
   <link rel="stylesheet" href="style.css" />
   <script type="module" src="script.js"></script>
 </head>
 
 <body>
-  <header class="hero">
-    <nav class="navbar">
-      <h1>The Record Room</h1>
+  <header>
+    <div class="logo">🎵 The Record Room</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
-
-    <div class="hero-content">
-      <h2>Rate the music you love</h2>
-      <p>
-        The Record Room is a music review app that lets users connect with Spotify
-        and share ratings for songs, albums, and playlists.
-      </p>
-      <button id="loginBtn">Connect with Spotify</button>
-    </div>
   </header>
 
-  <main>
-    <section class="about">
-      <h2>How it works</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Connect</h3>
-          <p>Log in with Spotify to access your music profile.</p>
-        </div>
-        <div class="card">
-          <h3>Discover</h3>
-          <p>Browse your favorite music and build your own reviews.</p>
-        </div>
-        <div class="card">
-          <h3>Rate</h3>
-          <p>Score songs, albums, and playlists in one place.</p>
-        </div>
-      </div>
-    </section>
+  <section class="hero">
+    <h1>Rate Your Music</h1>
+    <p class="subtitle">Discover, rate, and share your music taste with The Record Room</p>
+    <button id="loginBtn" class="cta-button">Connect with Spotify</button>
+  </section>
 
-    <section id="profileSection" class="profile hidden">
-      <h2>Your Spotify Profile</h2>
-      <div class="profile-card">
-        <div id="avatar"></div>
-        <h3 id="displayName"></h3>
-        <p><strong>User ID:</strong> <span id="id"></span></p>
-        <p><strong>Email:</strong> <span id="email"></span></p>
-        <p><strong>Spotify URI:</strong> <a id="uri" href="#" target="_blank"></a></p>
-        <p><strong>Profile Link:</strong> <a id="url" href="#" target="_blank">Open Profile</a></p>
-      </div>
-    </section>
-  </main>
+  <section id="features" class="features">
+    <div class="feature">
+      <div class="feature-icon">⭐</div>
+      <h3>Rate Everything</h3>
+      <p>Rate songs, artists, albums, and playlists. Build your personal music database.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">🎧</div>
+      <h3>Spotify Integration</h3>
+      <p>Connect your Spotify account to explore your profile and start building reviews.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">📊</div>
+      <h3>Analytics</h3>
+      <p>Track your music preferences and discover patterns in the artists and genres you love.</p>
+    </div>
+  </section>
+
+  <section id="about" class="info-section">
+    <h2>About The Record Room</h2>
+    <p>
+      The Record Room is a music rating app inspired by the idea of giving users a space
+      to organize and review the music they care about most. By connecting with Spotify,
+      users can explore their profile and eventually rate songs, albums, playlists, and more.
+    </p>
+  </section>
+
+  <section id="profileSection" class="profile hidden">
+    <h2>Your Spotify Profile</h2>
+    <div class="profile-card">
+      <div id="avatar"></div>
+      <h3 id="displayName"></h3>
+      <p><strong>User ID:</strong> <span id="id"></span></p>
+      <p><strong>Email:</strong> <span id="email"></span></p>
+      <p><strong>Spotify URI:</strong> <a id="uri" href="#" target="_blank"></a></p>
+      <p><strong>Profile Link:</strong> <a id="url" href="#" target="_blank">Open Profile</a></p>
+      <p><strong>Profile Image:</strong> <span id="imgUrl"></span></p>
+    </div>
+  </section>
+
+  <section id="contact" class="info-section">
+    <h2>Contact</h2>
+    <p>More features coming soon as The Record Room continues to grow.</p>
+  </section>
 </body>
 
 </html>
