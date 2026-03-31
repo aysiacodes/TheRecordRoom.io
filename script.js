@@ -1,3 +1,5 @@
+//i'm assuming this is the API connection? plz add a complete description to this :3
+
 const clientId = "7fdd0ed982444922b26f808b4d515607";
 const redirectUri = "http://127.0.0.1:5173";
 
